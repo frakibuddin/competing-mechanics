@@ -45,6 +45,10 @@ body {
   background-color: var(--light-blue);
   color: var(--white-color);
 }
+.bg-gray {
+  background: rgb(255, 255, 255, 0.7);
+  color: #311643;
+}
 .section-heading {
   font-size: 3.5rem;
   color: var(--heading-color);
@@ -174,7 +178,7 @@ header {
 
 /* hero section style */
 .hero-section {
-  background: linear-gradient(70deg, #b3fd4cce 10%, #b3fd4c00 90%),
+  background: linear-gradient(70deg, #0147b1d3 10%, #b3fd4c00 70%),
     url(../media/img/hero-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
