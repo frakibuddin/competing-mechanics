@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 300px;
+  }
+  .text-center-md {
+    text-align: center;
+  }
+  .hero-section {
+    padding: 10rem 0;
+  }
+  .owl-carousel {
+    width: 100%;
+  }
+  .testimonial-section {
+    background: linear-gradient(70deg, #b3fd4c 103%, #b3fd4c00 100%);
+  }
+}
+@media (max-width: 400px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+}

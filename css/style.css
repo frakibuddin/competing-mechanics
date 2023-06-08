@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* global CSS */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.8rem;
+  font-family: "Urbanist", sans-serif;
+  background-color: #f8f5ee;
+}
+:root {
+  --black-color: #000000;
+  --heading-color: #311643;
+  --blue: #0146b1;
+  --light-blue: #326cc3;
+  --light-green: #b3fd4c;
+  --white-color: #ffffff;
+}
+.btn-sign {
+  background-color: #0146b1;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  width: 15rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
+}
+.btn-login {
+  background-color: #0146b1;
+  font-size: 2rem;
+  padding: 0.7rem 5rem;
+  color: #fff;
+}
+.btn-sign:hover,
+.btn-login:hover {
+  background-color: var(--light-blue);
+  color: var(--white-color);
+}
+.section-heading {
+  font-size: 3.5rem;
+  color: var(--heading-color);
+  font-weight: 700;
+}
+.section-heading span {
+  color: var(--blue);
+}
+section {
+  padding: 5rem 0;
+}
+.mail-link {
+  color: var(--blue) !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+/* onscroll animation */
+/**Styling scrollable elements*/
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 0.5s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 0.5s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 0.5s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 0.5s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* header */
+.navbar-toggler {
+  font-size: 2rem;
+}
+
+header {
+  background-color: var(--blue);
+}
+.navbar {
+  background: var(--menu-bg) !important;
+  color: var(--white-color);
+}
+.navbar-nav {
+  gap: 1rem;
+}
+.navbar-brand img {
+  width: 400px;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white-color);
+  font-weight: 500;
+}
+.login-button a {
+  border: 0.2rem solid #b3fd4c;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+}
+.login-button a:hover {
+  background-color: #b3fd4c;
+  color: #0146b1 !important;
+}
+
+/* hero section style */
+.hero-section {
+  background: linear-gradient(70deg, #b3fd4cce 10%, #b3fd4c00 90%),
+    url(../media/img/hero-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 48% 15%;
+  padding: 18rem 0;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content-inner {
+  background: rgb(255, 255, 255, 0.4);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+}
+.hero-content-inner h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+.hero-content-inner h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: var(--heading-color);
+}
+.hero-content-inner p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  line-height: 125%;
+}
+.list li {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+/* testimonial-section" */
+.testimonial-section {
+  background: linear-gradient(70deg, #b3fd4c 54%, #b3fd4c00 76%),
+    url(../media/img/testimonial-bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90% 100%;
+}
+.testimonial-section .item {
+  text-align: center;
+  background-color: #f8f5ee83;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.owl-carousel {
+  width: 70%;
+}
+
+/* Login page style */
+
+.login-section {
+  height: 100vh;
+  background-color: var(--light-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-frm h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+.login-frm .input-field {
+  margin: 1.5rem 0;
+}
+.login-frm .input-field input {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+}
+.login-frm .input-field label {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
