@@ -1,4 +1,15 @@
+@media (max-width: 991px) {
+  .login-frm {
+    padding: 7rem 3rem;
+  }
+}
 @media (max-width: 768px) {
+  .dn-768 {
+    display: none;
+  }
+  .btn-trasnperent {
+    margin-left: 0;
+  }
   .navbar-brand img {
     width: 300px;
   }
@@ -16,6 +27,14 @@
   }
 }
 @media (max-width: 400px) {
+  html {
+    font-size: 59.5%;
+  }
+  .navbar-brand img {
+    width: 250px;
+  }
+}
+@media (max-width: 300px) {
   .navbar-brand img {
     width: 200px;
   }

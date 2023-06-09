@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Home</title>
+    <title>Car Owner Login</title>
 </head>
 
 <body>
     <!-- header start -->
     <header>
         <menu>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <div class="container">
                     <a class="navbar-brand mt-3" href="index.html"><img src="media/img/logo.jpeg" alt="logo"></a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -30,17 +30,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home </a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Mechanic Information</a>
+                                <a class="btn btn-trasnperent" href="#"> Exit </a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Repair Categories</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Affiliate Information</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -53,23 +46,34 @@
     <section class="login-section">
         <div class="container">
             <div class="row align-items-center ">
-                <div class="col-md-6">
+                <div class="col-md-6 scrolled fade-in-bottom">
                     <form action="" class="login-frm">
-                        <h2 class="mb-5">Login Car Owner</h2>
+                        <h2 class="mb-4 section-heading">Login</h2>
                         <div class="input-field">
                             <label for="email">Email Address</label>
                             <input type="email" class="form-control" id="email">
                         </div>
                         <div class="input-field">
-                            <label for="email">Password</label>
-                            <input type="email" class="form-control" id="email">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password">
                         </div>
+                        <div class="login-option">
+                            <div class="">
+                                <input type="checkbox" id="checkbox-signed">
+                                <label for="checkbox-signed">Keep me signed in</label>
+                            </div>
+                            <div>
+                                <a href="" class="forget-pass">Forget Password?</a>
+                            </div>
+                        </div>
+                        <div class="text-danger mt-3 fw-600"></div>
                         <div class="input-field mt-5">
-                            <button class="btn btn-login">Login</button>
+                            <button class="btn btn-login d-block">Post Bulleting Board</button>
                         </div>
+
                     </form>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 dn-768 scrolled scale">
                     <h3 class="text-center ">Bulleting Board</h3>
                     <img class="img-fluid" src="media/img/board-image.png" alt="">
                 </div>

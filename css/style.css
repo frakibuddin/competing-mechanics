@@ -35,13 +35,15 @@ body {
   border-radius: 0.5rem;
 }
 .btn-login {
-  background-color: #0146b1;
+  background-color: var(--blue);
   font-size: 2rem;
   padding: 0.7rem 5rem;
   color: #fff;
+  width: 100%;
 }
 .btn-sign:hover,
-.btn-login:hover {
+.btn-login:hover,
+.btn-trasnperent:hover {
   background-color: var(--light-blue);
   color: var(--white-color);
 }
@@ -65,6 +67,15 @@ section {
   font-weight: 500;
   text-decoration: none;
 }
+.btn-trasnperent {
+  border: 0.1rem solid #f8f5ee;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+  color: #fff;
+  width: 9rem;
+  border-radius: 0.5rem;
+}
+
 /* onscroll animation */
 /**Styling scrollable elements*/
 
@@ -91,6 +102,22 @@ section {
 
 .scrolled.slide-right {
   animation: slide-in-right 0.5s ease-in-out both;
+}
+
+.scrolled.scale {
+  animation: scale-in-full 0.5s ease-in-out both;
+}
+@keyframes scale-in-full {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in-left {
@@ -143,7 +170,7 @@ section {
 
 /* header */
 .navbar-toggler {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 header {
@@ -176,10 +203,9 @@ header {
   color: #0146b1 !important;
 }
 
-/* hero section style */
+/* hero section style  linear-gradient(70deg, #0147b1d3 10%, #b3fd4c00 70%)*/
 .hero-section {
-  background: linear-gradient(70deg, #0147b1d3 10%, #b3fd4c00 70%),
-    url(../media/img/hero-banner.jpg);
+  background: url(../media/img/hero-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 48% 15%;
@@ -191,7 +217,7 @@ header {
   justify-content: center;
 }
 .hero-content-inner {
-  background: rgb(255, 255, 255, 0.4);
+  background: rgb(255, 255, 255, 0.5);
   padding: 1.5rem 2rem;
   border-radius: 1rem;
 }
@@ -215,17 +241,16 @@ header {
   margin: 0.5rem 0;
   font-weight: 500;
 }
-/* testimonial-section" */
+/* testimonial-section" linear-gradient(70deg, #b3fd4c 54%, #b3fd4c00 76%), */
 .testimonial-section {
-  background: linear-gradient(70deg, #b3fd4c 54%, #b3fd4c00 76%),
-    url(../media/img/testimonial-bg1.jpg);
+  background: url(../media/img/testimonial-bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 90% 100%;
 }
 .testimonial-section .item {
   text-align: center;
-  background-color: #f8f5ee83;
+  background: rgb(255, 255, 255, 0.6);
   padding: 3rem 2rem;
   border-radius: 0.5rem;
 }
@@ -235,28 +260,58 @@ header {
 }
 
 /* Login page style */
-
 .login-section {
-  height: 100vh;
   background-color: var(--light-green);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10rem 0;
 }
-.login-frm h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: var(--heading-color);
+.login-frm {
+  background: rgb(255, 255, 255, 0.4);
+  padding: 7rem 5rem;
+  position: relative;
+  z-index: 99;
+  backdrop-filter: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.2);
 }
+
 .login-frm .input-field {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 .login-frm .input-field input {
-  padding: 0.5rem 1rem;
-  font-size: 2rem;
+  padding: 0.7rem 1rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
 }
 .login-frm .input-field label {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 500;
-  margin-bottom: 0.3rem;
+  color: var(--heading-color);
+}
+.login-frm label {
+  user-select: none;
+}
+.login-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+.forget-pass {
+  text-decoration: none;
+  color: var(--heading-color);
+}
+/* signup page */
+.signup-frm {
+  padding: 7rem 3rem;
+}
+.underline {
+  text-decoration: underline;
+}
+
+footer p {
+  font-weight: 500;
 }
