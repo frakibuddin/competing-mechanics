@@ -16,11 +16,25 @@
   .text-center-md {
     text-align: center;
   }
-  .hero-section {
-    padding: 10rem 0;
+  .hero-inner {
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+  }
+  .hero-img img {
+    width: 90%;
   }
   .owl-carousel {
     width: 100%;
+  }
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-text h4 {
+    margin: auto;
+  }
+  .carousel-item .hero-img {
+    margin-top: 5rem;
   }
   .testimonial-section {
     background: linear-gradient(70deg, #b3fd4c 103%, #b3fd4c00 100%);
