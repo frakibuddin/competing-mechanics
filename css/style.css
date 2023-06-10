@@ -34,6 +34,9 @@ body {
   letter-spacing: 0.1rem;
   border-radius: 0.5rem;
 }
+.bg-green {
+  background-color: #ee2b2b;
+}
 .btn-login {
   background-color: var(--blue);
   font-size: 2rem;
@@ -99,6 +102,9 @@ section {
 .scrolled.slide-left {
   animation: slide-in-left 0.5s ease-in-out both;
 }
+.scrolled.slide-left-own {
+  animation: slide-in-left-own 0.5s ease-in-out both;
+}
 
 .scrolled.slide-right {
   animation: slide-in-right 0.5s ease-in-out both;
@@ -129,6 +135,16 @@ section {
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left-own {
+  0% {
+    transform: translate(-70%, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
     opacity: 1;
   }
 }
@@ -205,34 +221,34 @@ header {
 
 /* hero section style  linear-gradient(70deg, #0147b1d3 10%, #b3fd4c00 70%)*/
 .hero-section {
-  background: url(../media/img/hero-banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 48% 15%;
-  padding: 18rem 0;
+  background: var(--light-green);
+  padding: 0;
+  position: relative;
 }
+.hero-bg-image img {
+  width: 100%;
+}
+
 .hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-content-inner {
-  background: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  background: #0146b1;
   padding: 1.5rem 2rem;
   border-radius: 1rem;
+  color: var(--white-color);
 }
-.hero-content-inner h3 {
+.hero-content h3 {
   font-size: 2.2rem;
   font-weight: 700;
-  color: var(--heading-color);
 }
-.hero-content-inner h1 {
+.hero-content h1 {
   font-size: 3.5rem;
   font-weight: bold;
-  margin: 1rem 0;
-  color: var(--heading-color);
 }
-.hero-content-inner p {
+.hero-content p {
   font-size: 2rem;
   margin-top: 1rem;
   line-height: 125%;

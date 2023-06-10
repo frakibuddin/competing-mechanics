@@ -16,14 +16,20 @@
   .text-center-md {
     text-align: center;
   }
-  .hero-section {
-    padding: 10rem 0;
+  .hero-content {
+    width: 80%;
   }
   .owl-carousel {
     width: 100%;
   }
   .testimonial-section {
     background: linear-gradient(70deg, #b3fd4c 103%, #b3fd4c00 100%);
+  }
+}
+@media (max-width: 550px) {
+  .hero-bg-image img {
+    height: 62rem;
+    object-fit: cover;
   }
 }
 @media (max-width: 400px) {
@@ -33,7 +39,11 @@
   .navbar-brand img {
     width: 250px;
   }
+  .hero-content {
+    width: 90%;
+  }
 }
+
 @media (max-width: 300px) {
   .navbar-brand img {
     width: 200px;
