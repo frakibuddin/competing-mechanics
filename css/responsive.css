@@ -7,6 +7,9 @@
   .dn-768 {
     display: none;
   }
+  .navbar-nav {
+    padding-bottom: 2rem;
+  }
   .btn-trasnperent {
     margin-left: 0;
   }

@@ -34,9 +34,7 @@ body {
   letter-spacing: 0.1rem;
   border-radius: 0.5rem;
 }
-.bg-green {
-  background-color: #ee2b2b;
-}
+
 .btn-login {
   background-color: var(--blue);
   font-size: 2rem;
@@ -45,8 +43,7 @@ body {
   width: 100%;
 }
 .btn-sign:hover,
-.btn-login:hover,
-.btn-trasnperent:hover {
+.btn-login:hover {
   background-color: var(--light-blue);
   color: var(--white-color);
 }
@@ -55,7 +52,7 @@ body {
   color: #311643;
 }
 .section-heading {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--heading-color);
   font-weight: 700;
 }
@@ -64,24 +61,34 @@ body {
 }
 section {
   padding: 5rem 0;
+  overflow: hidden;
 }
 .mail-link {
   color: var(--blue) !important;
   font-weight: 500;
   text-decoration: none;
 }
+.bg-red-btn {
+  background-color: #ff2100;
+}
 .btn-trasnperent {
-  border: 0.1rem solid #f8f5ee;
-  font-size: 1.8rem;
-  margin-left: 2rem;
+  font-size: 1.9rem;
+  margin-left: 3rem;
   color: #fff;
   width: 9rem;
   border-radius: 0.5rem;
+  outline: 0;
+  background: #ff2100;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.btn-trasnperent:hover,
+.bg-red-btn:hover {
+  background-color: #e02103;
+  color: #fff;
 }
 
 /* onscroll animation */
-/**Styling scrollable elements*/
-
 .js-scroll {
   opacity: 0;
   transition: opacity 500ms;
@@ -200,7 +207,7 @@ header {
   gap: 1rem;
 }
 .navbar-brand img {
-  width: 400px;
+  max-width: 400px;
 }
 .navbar-collapse {
   justify-content: flex-end;
@@ -208,6 +215,7 @@ header {
 .navbar-dark .navbar-nav .nav-link {
   color: var(--white-color);
   font-weight: 500;
+  font-size: 1.9rem;
 }
 .login-button a {
   border: 0.2rem solid #b3fd4c;
@@ -236,7 +244,7 @@ header {
   width: 40%;
   transform: translate(-50%, -50%);
   background: #0146b1;
-  padding: 1.5rem 2rem;
+  padding: 3rem 2rem;
   border-radius: 1rem;
   color: var(--white-color);
 }
@@ -245,8 +253,9 @@ header {
   font-weight: 700;
 }
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: bold;
+  margin: 1rem 0;
 }
 .hero-content p {
   font-size: 2rem;
@@ -257,7 +266,7 @@ header {
   margin: 0.5rem 0;
   font-weight: 500;
 }
-/* testimonial-section" linear-gradient(70deg, #b3fd4c 54%, #b3fd4c00 76%), */
+/* testimonial-section"  linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), */
 .testimonial-section {
   background: url(../media/img/testimonial-bg1.jpg);
   background-repeat: no-repeat;
@@ -265,14 +274,18 @@ header {
   background-position: 90% 100%;
 }
 .testimonial-section .item {
-  text-align: center;
-  background: rgb(255, 255, 255, 0.6);
-  padding: 3rem 2rem;
+  background: rgb(255, 255, 255, 0.9);
+  padding: 4rem 3rem;
   border-radius: 0.5rem;
+}
+.testimonial-section .item p {
+  color: #311643;
+  font-weight: 500;
+  line-height: 155%;
 }
 
 .owl-carousel {
-  width: 70%;
+  width: 65%;
 }
 
 /* Login page style */
@@ -320,6 +333,27 @@ header {
   text-decoration: none;
   color: var(--heading-color);
 }
+.bulleting-board {
+  position: relative;
+}
+.bulleting-board::after {
+  content: "";
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  filter: blur(5px);
+}
+.bulleting-board-txt {
+  position: absolute;
+  left: 57%;
+  transform: translateX(-50%);
+  top: -4rem;
+}
 /* signup page */
 .signup-frm {
   padding: 7rem 3rem;
@@ -329,5 +363,24 @@ header {
 }
 
 footer p {
+  margin-top: 1rem;
   font-weight: 500;
+}
+
+/* blur loading */
+.blur-load {
+  background-size: cover;
+  background-position: center;
+}
+.blur-load img {
+  object-position: center;
+  object-fit: cover;
+  min-height: 90vh;
+}
+.blur-load > img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+.blur-load.loaded > img {
+  opacity: 1;
 }

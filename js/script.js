@@ -49,3 +49,21 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => {
   handleScrollAnimation();
 });
+
+// blur loading
+const blurDiv = document.querySelectorAll(".blur-load");
+
+blurDiv.forEach((div) => {
+  const img = div.querySelector("img");
+
+  function loaded() {
+    //show
+    div.classList.add("loaded");
+  }
+
+  if (img.complete) {
+    loaded();
+  } else {
+    img.addEventListener("load", loaded);
+  }
+});
