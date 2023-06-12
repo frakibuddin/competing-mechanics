@@ -270,12 +270,12 @@ header {
   margin: 0.5rem 0;
   font-weight: 500;
 }
-/* testimonial-section"  linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), */
+/* testimonial-section"  */
 .testimonial-section {
   background: url(../media/img/testimonial-bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 90% 100%;
+  background-position: 75% 100%;
 }
 .testimonial-section .item {
   background: rgb(255, 255, 255, 0.9);
