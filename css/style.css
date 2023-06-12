@@ -243,10 +243,12 @@ header {
   left: 50%;
   width: 40%;
   transform: translate(-50%, -50%);
-  background: #e02103;
-  padding: 3rem 2rem;
-  border-radius: 1rem;
+  background: #ff2100;
+  padding: 5rem 2rem;
+  border-radius: 5rem;
   color: var(--white-color);
+  text-align: center;
+  box-shadow: 1px -1px 3px 0px #0146b1, -1px 1px 3px 0px #0146b1;
 }
 .hero-content h3 {
   font-size: 2.2rem;
@@ -255,12 +257,13 @@ header {
 .hero-content h1 {
   font-size: 3.8rem;
   font-weight: bold;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .hero-content p {
   font-size: 2rem;
   margin-top: 1rem;
   line-height: 125%;
+  font-weight: 600;
 }
 /* we-do-section */
 .we-do-section {
