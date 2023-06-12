@@ -243,7 +243,7 @@ header {
   left: 50%;
   width: 40%;
   transform: translate(-50%, -50%);
-  background: #0146b1;
+  background: #e02103;
   padding: 3rem 2rem;
   border-radius: 1rem;
   color: var(--white-color);
@@ -261,6 +261,10 @@ header {
   font-size: 2rem;
   margin-top: 1rem;
   line-height: 125%;
+}
+/* we-do-section */
+.we-do-section {
+  padding: 7rem 0;
 }
 .list li {
   margin: 0.5rem 0;
