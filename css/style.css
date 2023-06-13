@@ -54,6 +54,7 @@ body {
 
 .btn-trasnperent:focus {
   outline: 0;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .section-heading {
@@ -84,7 +85,11 @@ section {
   border-radius: 0.5rem;
   outline: 0;
   background: #ff2100;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .btn-trasnperent:hover,
@@ -96,6 +101,8 @@ section {
 /* onscroll animation */
 .js-scroll {
   opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
@@ -104,26 +111,44 @@ section {
 }
 
 .scrolled.fade-in {
+  -webkit-animation: fade-in 0.5s ease-in-out both;
   animation: fade-in 0.5s ease-in-out both;
 }
 
 .scrolled.fade-in-bottom {
+  -webkit-animation: fade-in-bottom 0.5s ease-in-out both;
   animation: fade-in-bottom 0.5s ease-in-out both;
 }
 
 .scrolled.slide-left {
+  -webkit-animation: slide-in-left 0.5s ease-in-out both;
   animation: slide-in-left 0.5s ease-in-out both;
 }
 .scrolled.slide-left-own {
+  -webkit-animation: slide-in-left-own 0.5s ease-in-out both;
   animation: slide-in-left-own 0.5s ease-in-out both;
 }
 
 .scrolled.slide-right {
+  -webkit-animation: slide-in-right 0.5s ease-in-out both;
   animation: slide-in-right 0.5s ease-in-out both;
 }
 
 .scrolled.scale {
+  -webkit-animation: scale-in-full 0.5s ease-in-out both;
   animation: scale-in-full 0.5s ease-in-out both;
+}
+@-webkit-keyframes scale-in-full {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 @keyframes scale-in-full {
   0% {
@@ -134,6 +159,19 @@ section {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -150,13 +188,40 @@ section {
     opacity: 1;
   }
 }
-@keyframes slide-in-left-own {
+@-webkit-keyframes slide-in-left-own {
   0% {
+    -webkit-transform: translate(-70%, -50%);
     transform: translate(-70%, -50%);
     opacity: 0;
   }
   100% {
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left-own {
+  0% {
+    -webkit-transform: translate(-70%, -50%);
+    transform: translate(-70%, -50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -174,6 +239,19 @@ section {
   }
 }
 
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes fade-in-bottom {
   0% {
     -webkit-transform: translateY(50px);
@@ -183,6 +261,15 @@ section {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -215,6 +302,8 @@ header {
   max-width: 400px;
 }
 .navbar-collapse {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -247,12 +336,15 @@ header {
   top: 50%;
   left: 50%;
   width: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: #ff2100;
   padding: 5rem 2rem;
   border-radius: 5rem;
   color: var(--white-color);
   text-align: center;
+  -webkit-box-shadow: 1px -1px 3px 0px #0146b1, -1px 1px 3px 0px #0146b1;
   box-shadow: 1px -1px 3px 0px #0146b1, -1px 1px 3px 0px #0146b1;
 }
 .hero-content h3 {
@@ -303,8 +395,14 @@ header {
 /* Login page style */
 .login-section {
   background-color: var(--light-green);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 10rem 0;
 }
@@ -313,8 +411,10 @@ header {
   padding: 7rem 5rem;
   position: relative;
   z-index: 99;
+  -webkit-backdrop-filter: 5rem;
   backdrop-filter: 5rem;
   border-radius: 1rem;
+  -webkit-box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -332,12 +432,22 @@ header {
   color: var(--heading-color);
 }
 .login-frm label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .login-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 0.2rem;
 }
@@ -353,16 +463,21 @@ header {
   position: absolute;
   bottom: 1.5rem;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 90%;
   height: 6rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
+  -webkit-filter: blur(5px);
   filter: blur(5px);
 }
 .bulleting-board-txt {
   position: absolute;
   left: 57%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: -4rem;
 }
@@ -385,12 +500,16 @@ footer p {
   background-position: center;
 }
 .blur-load img {
+  -o-object-position: center;
   object-position: center;
+  -o-object-fit: cover;
   object-fit: cover;
   min-height: 90vh;
 }
 .blur-load > img {
   opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 .blur-load.loaded > img {
