@@ -24,6 +24,7 @@ body {
   --light-green: #b3fd4c;
   --white-color: #ffffff;
   --white-light: #f8f5ee;
+  --red: #ff2100;
 }
 .btn-sign {
   background-color: #0146b1;
@@ -537,7 +538,6 @@ footer p {
 }
 .hands img {
   width: 100%;
-  border: 2px solid #ff2100;
   border-radius: 0.5rem;
 }
 .board-heading {
@@ -576,7 +576,7 @@ footer p {
 /* category-section */
 .category-section {
   background: var(--light-green);
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 12rem;
 }
 .row-category {
@@ -595,13 +595,13 @@ footer p {
   flex-basis: 18%;
 }
 .category-heading {
-  background: var(--blue);
+  background: var(--red);
   color: var(--white-color);
   text-align: center;
   font-size: 2.3rem;
   font-weight: 600;
   padding: 0.6rem 0;
-  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -622,6 +622,16 @@ footer p {
   transition: 0.2s ease-in-out;
   color: var(--heading-color);
 }
+.category-content li span {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--heading-color);
+  border-radius: 50%;
+}
+.category-content li {
+  font-weight: 500;
+  font-size: 1.9rem;
+}
 .category-content li:last-child {
   border-bottom: 0;
 }
@@ -633,4 +643,10 @@ footer p {
 }
 .category-content span {
   font-weight: 700;
+}
+.bg-red {
+  background-color: #ff2100;
+}
+.bg-red:hover {
+  background: #e02003dc;
 }
