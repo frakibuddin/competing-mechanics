@@ -23,6 +23,7 @@ body {
   --light-blue: #326cc3;
   --light-green: #b3fd4c;
   --white-color: #ffffff;
+  --white-light: #f8f5ee;
 }
 .btn-sign {
   background-color: #0146b1;
@@ -514,4 +515,122 @@ footer p {
 }
 .blur-load.loaded > img {
   opacity: 1;
+}
+
+/* bulletin board page stye */
+.bulleting-board-section {
+  background: var(--light-green);
+}
+.bulletin-board {
+  background: url(../media/img/bulletin-board.jpeg);
+  background-position: center;
+  background-size: 100% 100%;
+  padding: 7rem 10rem;
+  color: #fff;
+  position: relative;
+}
+.hands {
+  position: absolute;
+  right: 55px;
+  top: 65px;
+  width: 17%;
+}
+.hands img {
+  width: 100%;
+  border: 2px solid #ff2100;
+  border-radius: 0.5rem;
+}
+.board-heading {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 800;
+  color: #f8f5ee;
+  position: relative;
+  z-index: 9;
+}
+.bulletin-board-frm {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.bullein-field {
+  display: flex;
+  flex-direction: column;
+}
+.bullein-field input,
+.bullein-field select,
+.bullein-field textarea {
+  font-size: 1.8rem;
+  width: 15rem;
+}
+
+.bullein-field textarea {
+  width: 100%;
+  height: 30rem;
+  resize: none;
+}
+.bullein-field label {
+  font-weight: 600;
+}
+/* category-section */
+.category-section {
+  background: var(--light-green);
+  padding-top: 2rem;
+  padding-bottom: 12rem;
+}
+.row-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.category {
+  background: rgb(255, 255, 255, 0.4);
+  padding: 1rem;
+  border-radius: 1rem;
+
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.4);
+  flex-basis: 18%;
+}
+.category-heading {
+  background: var(--blue);
+  color: var(--white-color);
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding: 0.6rem 0;
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.category-content {
+  background-color: #fff;
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.category-content li {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  border-bottom: 1.8px solid rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 1rem;
+  transition: 0.2s ease-in-out;
+  color: var(--heading-color);
+}
+.category-content li:last-child {
+  border-bottom: 0;
+}
+.category-content li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.category-content p {
+  margin-bottom: 0;
+}
+.category-content span {
+  font-weight: 700;
 }
