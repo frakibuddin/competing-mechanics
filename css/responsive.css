@@ -8,7 +8,7 @@
 }
 @media (max-width: 850px) {
   .bulletin-board {
-    padding: 7rem 4rem;
+    padding: 7rem 5rem;
   }
   .bulletin-board-frm {
     flex-wrap: wrap;
@@ -64,6 +64,9 @@
   }
   .bulletin-board {
     background-size: 100% 106%;
+  }
+  .bulletin-board {
+    padding: 7rem 2.5rem;
   }
 }
 @media (max-width: 400px) {
