@@ -660,3 +660,10 @@ footer p {
 .bg-red:hover {
   background: #e02003dc;
 }
+.blue-tr-btn {
+  background-color: transparent;
+  border: 1px solid blue;
+}
+.blue-tr-btn:hover {
+  background: #326cc3;
+}
