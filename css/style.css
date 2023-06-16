@@ -99,6 +99,26 @@ section {
   background-color: #e02103;
   color: #fff;
 }
+.bg-red {
+  background-color: #ff2100;
+}
+.bg-red:hover {
+  background: #e02003dc;
+}
+.blue-tr-btn {
+  background-color: transparent;
+  border: 1px solid blue;
+}
+.blue-tr-btn:hover {
+  background: #326cc3;
+}
+.opacity-0 {
+  opacity: 0;
+}
+p {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
 
 /* onscroll animation */
 .js-scroll {
@@ -342,6 +362,7 @@ header {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: #ff2100;
+  background-position: center;
   padding: 5rem 2rem;
   border-radius: 5rem;
   color: var(--white-color);
@@ -481,7 +502,7 @@ header {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  top: -4rem;
+  top: -3rem;
 }
 /* signup page */
 .signup-frm {
@@ -654,16 +675,26 @@ footer p {
 .category-content span {
   font-weight: 700;
 }
-.bg-red {
-  background-color: #ff2100;
+
+/* mechanic-info-page */
+.mechanic-info-page {
+  background-color: var(--light-green);
+  padding-top: 5rem;
+  padding-bottom: 1rem;
 }
-.bg-red:hover {
-  background: #e02003dc;
+.mechanic-info {
+  background: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.4)),
+    url(../media/img/bg.svg);
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 2rem auto;
 }
-.blue-tr-btn {
-  background-color: transparent;
-  border: 1px solid blue;
+.mechanic-info p {
+  font-size: 2rem;
 }
-.blue-tr-btn:hover {
-  background: #326cc3;
+.bulleting-board-mechanic-page {
+  width: 50%;
+  margin: auto;
+  margin-top: 6rem;
 }
