@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 991px) {
   .login-frm {
     padding: 7rem 3rem;
   }
   .category {
+    -ms-flex-preferred-size: 31%;
     flex-basis: 31%;
   }
 }
@@ -11,7 +19,10 @@
     padding: 7rem 5rem;
   }
   .bulletin-board-frm {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .hands img {
@@ -53,6 +64,7 @@
     background: linear-gradient(70deg, #b3fd4c 103%, #b3fd4c00 100%);
   }
   .category {
+    -ms-flex-preferred-size: 48%;
     flex-basis: 48%;
   }
 }
@@ -68,6 +80,9 @@
   .bulletin-board {
     padding: 7rem 2.5rem;
   }
+  .bulleting-board-mechanic-page {
+    width: 90%;
+  }
 }
 @media (max-width: 400px) {
   html {
@@ -80,6 +95,7 @@
     width: 90%;
   }
   .category {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
 }
