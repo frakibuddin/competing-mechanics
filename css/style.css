@@ -491,17 +491,17 @@ header {
 .bulleting-board::after {
   content: "";
   position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
+  bottom: 2.5%;
+  left: 53%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 90%;
-  height: 6rem;
+  height: 20%;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   -webkit-filter: blur(5px);
-  filter: blur(5px);
+  filter: blur(7px);
 }
 .bulleting-board-txt {
   position: absolute;
@@ -748,4 +748,37 @@ footer p {
   width: 50%;
   margin: auto;
   margin-top: 6rem;
+}
+
+/* thankyou-section */
+.thankyou-section {
+  background: var(--light-green);
+  height: 92vh;
+  text-align: center;
+  position: relative;
+}
+.thank-you-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.thank-you-inner h2 {
+  background: var(--red);
+  padding: 1rem 1.5rem;
+  font-size: 4.5rem;
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.thank-image {
+  max-width: 45rem;
+  margin: auto;
+}
+.thank-image img {
+  width: 100%;
 }
