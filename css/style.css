@@ -31,7 +31,7 @@ body {
   --light-green: #b3fd4c;
   --white-color: #ffffff;
   --white-light: #f8f5ee;
-  --red: #ff2100;
+  --red: #ff2102;
 }
 .btn-sign {
   background-color: #0146b1;
@@ -350,10 +350,10 @@ header {
   color: #0146b1 !important;
 }
 
-/* hero section style  linear-gradient(70deg, #0147b1d3 10%, #b3fd4c00 70%)*/
+/* hero section style  */
 .hero-section {
   background: var(--light-green);
-  padding: 0;
+  padding: 0.9rem 0;
   position: relative;
 }
 .hero-bg-image img {
@@ -741,8 +741,9 @@ footer p {
   width: 90%;
   margin: 2rem auto;
 }
-.mechanic-info p {
+.desc {
   font-size: 2rem;
+  color: var(--heading-color);
 }
 .bulleting-board-mechanic-page {
   width: 50%;
@@ -781,4 +782,47 @@ footer p {
 }
 .thank-image img {
   width: 100%;
+}
+
+/* affiliate-section page style */
+.affiliate-section {
+  background: var(--light-green);
+}
+.affiliate-header {
+  background-color: var(--red);
+  padding: 3rem 5rem;
+}
+.affiliate {
+  position: relative;
+  border-radius: 1rem;
+}
+.affiliate-header {
+  border-radius: 1rem 1rem 0 0;
+}
+.affiliate-header h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.affiliate-main {
+  background: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)),
+    url(../media/img/bg.svg);
+  /* background: rgb(255, 255, 255, 0.5); */
+  padding: 2rem 5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+.affiliate-main h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+.affiliate-img {
+  width: 22rem;
+  position: absolute;
+  top: -25px;
+  right: 70px;
 }

@@ -67,6 +67,12 @@
     -ms-flex-preferred-size: 48%;
     flex-basis: 48%;
   }
+  .affiliate-header h2 {
+    text-align: center;
+  }
+  .affiliate-main h3 {
+    margin-top: 2rem;
+  }
 }
 @media (max-width: 550px) {
   .hero-bg-image img {
@@ -82,6 +88,10 @@
   }
   .bulleting-board-mechanic-page {
     width: 90%;
+  }
+  .affiliate-main,
+  .affiliate-header {
+    padding: 2rem 3rem;
   }
 }
 @media (max-width: 400px) {
