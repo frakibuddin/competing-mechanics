@@ -10,6 +10,13 @@
     width: 20rem;
     right: 21px;
   }
+  .remineded {
+    top: 1rem;
+    right: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+  }
 }
 @media (max-width: 850px) {
   .bulletin-board {
@@ -69,6 +76,15 @@
   }
   .affiliate-main h3 {
     margin-top: 2rem;
+  }
+  .thank-you-inner h2 {
+    font-size: 3.4rem;
+  }
+  .remineded {
+    padding: 1rem;
+  }
+  .remineded h3 {
+    font-size: 2.2rem;
   }
 }
 @media (max-width: 550px) {
