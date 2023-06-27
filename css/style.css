@@ -81,6 +81,7 @@ section {
 }
 .btn-trasnperent {
   font-size: 1.9rem;
+  font-weight: 500;
   margin-left: 3rem;
   color: #fff;
   width: 9rem;
@@ -332,6 +333,8 @@ header {
   color: var(--white-color);
   font-weight: 500;
   font-size: 1.9rem;
+  border: 1px solid #326cc3;
+  border-radius: 0.5rem;
 }
 .login-button a {
   border: 0.2rem solid #b3fd4c;
