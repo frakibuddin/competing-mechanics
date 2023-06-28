@@ -76,13 +76,14 @@ section {
   font-weight: 500;
   text-decoration: none;
 }
+
 .bg-red-btn {
   background-color: #ff2100;
 }
 .btn-trasnperent {
   font-size: 1.9rem;
   font-weight: 500;
-  margin-left: 3rem;
+  margin-left: 2rem;
   color: #fff;
   width: 9rem;
   border-radius: 0.5rem;
@@ -335,6 +336,7 @@ header {
   font-size: 1.9rem;
   border: 1px solid #326cc3;
   border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
 }
 .login-button a {
   border: 0.2rem solid #b3fd4c;
@@ -778,6 +780,7 @@ footer p {
   letter-spacing: 0.2rem;
   display: inline-block;
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 .thank-image {
   max-width: 45rem;
