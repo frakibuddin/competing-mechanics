@@ -54,6 +54,16 @@ body {
   color: #311643;
 }
 
+.postings-btn {
+  background: var(--red);
+  font-size: 1.9rem;
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 6%;
+  top: 50px;
+}
+
 .btn-trasnperent:focus {
   outline: 0;
   -webkit-box-shadow: none;
@@ -97,7 +107,8 @@ section {
   transition: 0.3s;
 }
 .btn-trasnperent:hover,
-.bg-red-btn:hover {
+.bg-red-btn:hover,
+.postings-btn:hover {
   background-color: #e02103;
   color: #fff;
 }
@@ -561,7 +572,7 @@ footer p {
 .hands {
   position: absolute;
   right: 55px;
-  top: 65px;
+  top: 100px;
   width: 17%;
 }
 .hands img {

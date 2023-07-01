@@ -40,6 +40,12 @@
   .bullein-field textarea {
     width: 100%;
   }
+  .bulletin-head {
+    text-align: center;
+  }
+  .postings-btn {
+    position: inherit;
+  }
 }
 @media (max-width: 768px) {
   .dn-768 {
