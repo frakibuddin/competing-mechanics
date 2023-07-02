@@ -61,7 +61,8 @@ body {
   border-radius: 0.5rem;
   position: absolute;
   right: 6%;
-  top: 50px;
+  top: 180px;
+  z-index: 9;
 }
 
 .btn-trasnperent:focus {
@@ -565,19 +566,20 @@ footer p {
   background: url(../media/img/bulletin-board.jpeg);
   background-position: center;
   background-size: 100% 100%;
-  padding: 7rem 10rem;
+  padding: 5rem 10rem;
   color: #fff;
   position: relative;
 }
 .hands {
   position: absolute;
-  right: 55px;
-  top: 100px;
-  width: 17%;
+  right: 4%;
+  top: 50px;
+  width: 22rem;
 }
 .hands img {
   width: 100%;
   border-radius: 0.5rem;
+  border: 0.2rem solid var(--red);
 }
 .board-heading {
   font-size: 3.7rem;

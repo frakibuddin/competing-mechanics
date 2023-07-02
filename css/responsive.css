@@ -17,8 +17,7 @@
     transform: translateX(-50%);
     width: 95%;
   }
-}
-@media (max-width: 850px) {
+
   .bulletin-board {
     padding: 7rem 5rem;
   }
@@ -47,6 +46,7 @@
     position: inherit;
   }
 }
+
 @media (max-width: 768px) {
   .dn-768 {
     display: none;
