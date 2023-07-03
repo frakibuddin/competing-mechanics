@@ -57,3 +57,21 @@ blurDiv.forEach((div) => {
     img.addEventListener("load", loaded);
   }
 });
+
+// pop up functionality id=""
+const viewBtns = document.querySelectorAll("#view-btn");
+const popUp = document.querySelector(".view-popup");
+const popUpClouse = document.querySelector(".popup-clouse");
+
+//open popup
+viewBtns.forEach((viewBtn) => {
+  viewBtn.onclick = (e) => {
+    e.preventDefault();
+    popUp.classList.add("active");
+  };
+});
+
+//close popup
+popUpClouse.onclick = () => {
+  popUp.classList.remove("active");
+};

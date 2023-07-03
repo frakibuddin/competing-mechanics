@@ -96,7 +96,7 @@ section {
   font-weight: 500;
   margin-left: 2rem;
   color: #fff;
-  width: 9rem;
+  min-width: 9rem;
   border-radius: 0.5rem;
   outline: 0;
   background: #ff2100;
@@ -877,4 +877,82 @@ footer p {
 }
 .remineded p {
   color: var(--white-color);
+}
+/* posts-section */
+.posts-section {
+  background-color: var(--light-green);
+  padding-bottom: 9rem;
+}
+.posts-left,
+.posts-right {
+  background: rgb(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+
+.posts-left {
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-right: 1rem;
+}
+.posts-left img {
+  width: 90%;
+  border: 0.3rem solid var(--red);
+  border-radius: 1rem;
+}
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.action a {
+  transition: 0.3s;
+}
+.action a:hover {
+  transform: scale(0.9);
+}
+.action a img {
+  width: 2.5rem;
+}
+.popup-head {
+  width: 22% !important;
+}
+.view-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.view-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  width: 75%;
+  background: rgb(255, 255, 255, 0.7);
+}
+.popup-clouse {
+  font-size: 5rem;
+  color: var(--red);
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  padding: 1.3rem 1rem !important;
 }

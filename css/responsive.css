@@ -92,6 +92,13 @@
   .remineded h3 {
     font-size: 2.2rem;
   }
+  .popup-inner {
+    width: 85%;
+  }
+  .posts-left {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 }
 @media (max-width: 550px) {
   .hero-bg-image img {
