@@ -75,3 +75,8 @@ viewBtns.forEach((viewBtn) => {
 popUpClouse.onclick = () => {
   popUp.classList.remove("active");
 };
+
+//close by body click
+popUp.onclick = () => {
+  popUp.classList.remove("active");
+};
